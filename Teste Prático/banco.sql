@@ -13,11 +13,11 @@ CREATE TABLE IF NOT EXISTS usuarios (
 );
 
 -- Inserir alguns usuários de exemplo
--- Nota: As senhas estão em formato hash (bcrypt). Na prática, você geraria esses hashes a partir de senhas reais.
+
 INSERT INTO usuarios (nome, email, senha) VALUES
 ('João Silva', 'joao@example.com', '$2y$10$abcdefghijklmnopqrstuv'),
 ('Maria Santos', 'maria@example.com', '$2y$10$vwxyzabcdefghijklmnopq'),
 ('Carlos Oliveira', 'carlos@example.com', '$2y$10$rstuvwxyzabcdefghijklm');
-
+('Abimael De Menezes Pedro', 'abimaeldevfull.stack@gmail.com', 'senhavld123');
 -- Verificar se os dados foram inseridos corretamente
 SELECT * FROM usuarios;
